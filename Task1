@@ -1,9 +1,21 @@
+float circle1X;
+float circle1Y;
+float circle2X ;
+float circle2Y ;
+float circle3X ;
+float circle3Y;
+float circle4X ;
+float circle4Y ;
+
 void setup() {
   size(600, 400);
   colorMode(HSB);
   noStroke();
 }
+
 void draw(){
+background(0);
+
   
   
   
