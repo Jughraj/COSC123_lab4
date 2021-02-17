@@ -6,7 +6,7 @@ float circle3X ;
 float circle3Y;
 float circle4X ;
 float circle4Y ;
-
+int r;
 void setup() {
   size(600, 400);
   colorMode(HSB);
@@ -17,7 +17,7 @@ void draw(){
 background(0);
 //shapes & color
 
-  fill(255);
+  fill(r,255,255,75);
   
   ellipse(circle1X, circle1Y , 175, 175);
   ellipse(circle2X, circle2Y , 175, 175);
@@ -36,5 +36,8 @@ background(0);
   
  circle4X = mouseX;
  circle4Y = height - mouseY;
-  
+  r++;
+  if (r > 255) {
+  r = 0;
+  }
 }
