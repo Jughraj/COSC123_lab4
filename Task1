@@ -15,8 +15,26 @@ void setup() {
 
 void draw(){
 background(0);
+//shapes & color
 
+  fill(255);
   
+  ellipse(circle1X, circle1Y , 175, 175);
+  ellipse(circle2X, circle2Y , 175, 175);
+  ellipse(circle3X, circle3Y , 175, 175);
+  ellipse(circle4X, circle4Y , 175, 175);
   
+  //logic 
+  circle1X = width - mouseX;
+  circle1Y = height - mouseY;
+ 
+  circle2X = mouseX;
+  circle2Y = mouseY;
+  
+  circle3X = width - mouseX;
+  circle3Y = mouseY;
+  
+ circle4X = mouseX;
+ circle4Y = height - mouseY;
   
 }
