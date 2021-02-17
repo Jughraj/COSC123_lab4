@@ -18,11 +18,19 @@ background(0);
 //shapes & color
 
   fill(r,255,255,75);
-  
   ellipse(circle1X, circle1Y , 175, 175);
   ellipse(circle2X, circle2Y , 175, 175);
   ellipse(circle3X, circle3Y , 175, 175);
   ellipse(circle4X, circle4Y , 175, 175);
+  
+  //dancing stickman 
+noFill();
+strokeWeight(5);
+stroke(255);
+ellipse(mouseX,mouseY,100,100);
+bezier(34,128, mouseX+50, mouseY+50, mouseX-50 ,mouseY-50 ,564, 378);
+bezier(30,379, mouseX-50, mouseY-50, mouseX+50 ,mouseY+50 ,571, 126);
+  noStroke();
   
   //logic 
   circle1X = width - mouseX;
@@ -40,4 +48,3 @@ background(0);
   if (r > 255) {
   r = 0;
   }
-}
